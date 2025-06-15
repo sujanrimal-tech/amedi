@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satya MediTech Solution - Home</title>
-
-    <!-- THE MISSING FONT LINK IS NOW ADDED (THIS IS THE FIX) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <!-- END OF FIX -->
-
     <style>
         /* Basic CSS for a professional look */
         body {
@@ -20,90 +13,76 @@
             background-color: #f4f7f6;
             color: #333;
         }
-
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px 0;
         }
-
         /* Header & Navigation */
         header {
             background-color: #ffffff;
             padding: 20px 0;
             border-bottom: 2px solid #0056b3;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
         header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
+    font-size: 1.8em; /* You can adjust this size if needed */
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* This vertically centers the text with the logo */
+}
+.logo img {
+    height: 45px; /* Controls the height of your logo */
+    margin-right: 15px; /* Adds space between the logo and the name */
+}
 
-        .logo img {
-            height: 70px;
-            margin-right: 15px;
-        }
-
-        .logo span {
-            background: linear-gradient(45deg, hsl(211, 97%, 44%), #004080);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-family: 'Lobster', cursive; /* This will now work correctly */
-        }
-
+.logo span {
+    /* This creates the stylish gradient text effect */
+    background: linear-gradient(45deg, #007bff, #004080);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+        
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
         }
-
         nav li {
             margin-left: 25px;
         }
-
         nav a {
             text-decoration: none;
             color: #333;
-            font-weight: 700;
+            font-weight: 500;
             transition: color 0.3s;
-            font-family: Arial, sans-serif;
         }
-
         nav a:hover, nav a.active {
             color: #007bff;
         }
-
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(70, 143, 216, 0.7), rgba(0, 86, 179, 0.7)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 86, 179, 0.7)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 20px;
         }
-
         .hero h1 {
             font-size: 3em;
             margin-bottom: 20px;
         }
-
         .hero p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 30px;
-            font-family: sans-serif;
         }
-
         .btn {
             background-color: #007bff;
             color: white;
@@ -113,31 +92,22 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
-
         .btn:hover {
             background-color: #0056b3;
         }
-
         /* Sections */
         .section {
             padding: 60px 0;
             text-align: center;
         }
-
         .section-light {
             background-color: #ffffff;
         }
-
         .section h2 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-bottom: 40px;
             color: #0056b3;
         }
-
-        .section p {
-            font-family: sans-serif;
-        }
-
         /* Cards Layout for Services */
         .card-container {
             display: flex;
@@ -145,7 +115,6 @@
             gap: 30px;
             flex-wrap: wrap;
         }
-
         .card {
             background: white;
             border-radius: 8px;
@@ -155,54 +124,43 @@
             text-align: left;
             transition: transform 0.3s;
         }
-
         .card:hover {
             transform: translateY(-10px);
         }
-
         .card h3 {
             color: #007bff;
             margin-top: 0;
-            font-family: Arial, sans-serif;
         }
-
         /* Footer */
         footer {
             background-color: #1c2331;
             color: white;
-            padding: 30px 0;
+            padding: 40px 0;
             text-align: center;
         }
-
         footer .container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            text-align: left;
+             display: flex;
+             justify-content: space-around;
+             flex-wrap: wrap;
+             text-align: left;
         }
-
         footer .footer-col {
             width: 250px;
             margin-bottom: 20px;
         }
-
         footer h4 {
             color: #007bff;
             border-bottom: 2px solid #007bff;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-
         footer p, footer a {
             color: #ccc;
             text-decoration: none;
-            font-family: sans-serif;
         }
-
         footer a:hover {
             color: white;
         }
-
         .copyright {
             background-color: #161c27;
             padding: 15px 0;
@@ -217,7 +175,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-           <div class="logo">
+            <div class="logo">
     <img src="/satyamedi/logo.png" alt="Satya MediTech Solution Logo">
     <span>Satya MediTech Solution</span>
 </div>
@@ -259,17 +217,15 @@
                     <div class="card">
                         <h3>Biomedical Equipment</h3>
                         <p>Delivering Precision & Reliability in Biomedical Equipment Services — We specialize in the installation, calibration, repair, and maintenance of critical healthcare devices. Our expert team ensures your medical equipment performs at its best, helping you provide safer, faster, and more effective patient care.</p>
-                       
+                        
                     </div>
                     <div class="card">
                         <h3>Electrical & Electronic Solutions</h3>
                         <p>A Complete Electrical & Electronic Solutions — From powering your spaces to automating your systems, we deliver reliable, future-ready services for homes, businesses, industries, and institutions. Whether you need professional electrical installations or innovative electronic systems, our expert team ensures seamless integration, safety, and lasting performance.</p>
-                        
-                    </div>
                     <div class="card">
                         <h3>Expert Services & Support</h3>
-                        <p>Your Technology, Our Responsibility — Whether it’s system setup, regular maintenance, or emergency repairs, our expert support team is committed to providing fast, effective, and reliable assistance. We solve problems before they become obstacles, so your business never skips a beat.</p>
-                        
+                         <p>Your Technology, Our Responsibility — Whether it’s system setup, regular maintenance, or emergency repairs, our expert support team is committed to providing fast, effective, and reliable assistance. We solve problems before they become obstacles, so your business never skips a beat.</p>
+                       
                     </div>
                 </div>
             </div>
@@ -301,7 +257,7 @@
                 <p><a href="./services/">Services</a></p>
                 <p><a href="./contact/">Contact Us</a></p>
             </div>
-            <div class="footer-col">
+             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <p>Bharatpur, Chitwan , Nepal</p>
                 <p>Email: <a href="mailto:satyameditechs@gmail.com">satyameditechs@gmail.com</a></p>
@@ -310,7 +266,7 @@
         </div>
     </footer>
     <div class="copyright">
-        © 2025 Satya MediTech Solution. | Designed by Syko . All Rights Reserved.
+        © 2025 Satya MediTech Solution.| Designed by Syko. All Rights Reserved.
     </div>
 
 </body>

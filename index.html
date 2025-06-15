@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&display=swap" rel="stylesheet">
-    <style>
+   <style>
     /* Basic CSS for a professional look */
     body {
-        /* Correctly applying the font you chose from Google Fonts */
+        /* Correctly applying the font you chose */
         font-family: "Dancing Script", cursive;
         margin: 0;
         padding: 0;
-        background-color: hsl(222, 91%, 44%);
-        color: #333; /* Using a more standard color for body text for readability */
+        background-color: #3b82f6; /* Simplified color for better browser support */
+        color: #333; /* Standard text color */
     }
 
     .container {
@@ -27,10 +27,10 @@
 
     /* Header & Navigation */
     header {
-        background-color: #ffffff; /* Simplified color */
+        background-color: #ffffff;
         padding: 20px 0;
         border-bottom: 2px solid #0056b3;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Simplified color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     header .container {
@@ -44,20 +44,19 @@
         font-weight: bold;
         display: flex;
         align-items: center;
-    } /* <--- THIS CLOSING BRACE WAS MISSING */
+    } /* <<< --- THIS IS THE CRITICAL FIX (added the missing '}') */
 
     .logo img {
-        height: 70px; /* Controls the height of your logo */
-        margin-right: 15px; /* Adds space between the logo and the name */
+        height: 70px;
+        margin-right: 15px;
     }
 
     .logo span {
-        /* This creates the stylish gradient text effect */
         background: linear-gradient(45deg, hsl(211, 97%, 44%), #004080);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        font-family: 'Lobster', cursive; /* Using the other font you imported for the name */
+        font-family: 'Lobster', cursive; /* Using the Lobster font you imported */
     }
 
     nav ul {
@@ -73,10 +72,10 @@
 
     nav a {
         text-decoration: none;
-        color: #333333; /* Simplified color */
+        color: #333;
         font-weight: 700;
-        font-family: Arial, sans-serif; /* A clear font for navigation */
         transition: color 0.3s;
+        font-family: Arial, sans-serif; /* Using a clear font for navigation links */
     }
 
     nav a:hover, nav a.active {
@@ -94,13 +93,12 @@
     .hero h1 {
         font-size: 3em;
         margin-bottom: 20px;
-        font-family: 'Lobster', cursive; /* Stylish font for main heading */
     }
 
     .hero p {
         font-size: 1.5em;
         margin-bottom: 30px;
-        font-family: sans-serif; /* Readable font for paragraph */
+        font-family: sans-serif; /* Resetting to a more readable font for paragraphs */
     }
 
     .btn {
@@ -131,11 +129,10 @@
         font-size: 3.5em;
         margin-bottom: 20px;
         color: #0056b3; /* Simplified color */
-        font-family: 'Lobster', cursive; /* Stylish font for section headings */
     }
-    
+
     .section p {
-        font-family: sans-serif; /* Readable font for paragraphs */
+         font-family: sans-serif; /* Readable font */
     }
 
     /* Cards Layout for Services */
@@ -163,7 +160,7 @@
     .card h3 {
         color: #007bff;
         margin-top: 0;
-        font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif; /* Clear font for card titles */
     }
 
     /* Footer */

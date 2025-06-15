@@ -32,24 +32,21 @@
             align-items: center;
         }
         .logo {
-    font-size: 1.8em; /* You can adjust this size if needed */
-    font-weight: bold;
-    display: flex;
-    align-items: center; /* This vertically centers the text with the logo */
-}
-.logo img {
-    height: 45px; /* Controls the height of your logo */
-    margin-right: 15px; /* Adds space between the logo and the name */
-}
-
-.logo span {
-    /* This creates the stylish gradient text effect */
-    background: linear-gradient(45deg, #007bff, #004080);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-        
+            font-size: 1.8em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 45px;
+            margin-right: 15px;
+        }
+        .logo span {
+            background: linear-gradient(45deg, #007bff, #004080);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
         nav ul {
             list-style: none;
             margin: 0;
@@ -176,16 +173,16 @@
     <header>
         <div class="container">
             <div class="logo">
-    <img src="/satyamedi/logo.png" alt=" Logo">
-    <span>Satya MediTech Solution</span>
-</div>
+                <img src="/satyamedi/logo.png" alt="Satya MediTech Solution Logo">
+                <span>Satya MediTech Solution</span>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="./products/">Products</a></li>
-                    <li><a href="./services/">Services</a></li>
-                    <li><a href="./about/">About Us</a></li>
-                    <li><a href="./contact/">Contact</a></li>
+                    <li><a href="/satyamedi/index.html" class="active">Home</a></li>
+                    <li><a href="/satyamedi/products/">Products</a></li>
+                    <li><a href="/satyamedi/services/">Services</a></li>
+                    <li><a href="/satyamedi/about/">About Us</a></li>
+                    <li><a href="/satyamedi/contact/">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -196,7 +193,7 @@
         <section class="hero">
             <h1>Innovative Solutions for Medical & Electrical Needs</h1>
             <p>Your trusted partner for sales and service of biomedical, electrical, and electronic equipment.</p>
-            <a href="./products/" class="btn">Explore Our Products</a>
+            <a href="/satyamedi/products/" class="btn">Explore Our Products</a>
         </section>
 
         <!-- About Us Brief -->
@@ -209,33 +206,27 @@
             </div>
         </section>
 
-        <!-- Core Offerings -->
-<section class="section section-light">
-    <div class="container">
-        <h2>Our Core Offerings</h2>
-        <div class="card-container">
-            
-            <!-- Card 1: Biomedical -->
-            <div class="card">
-                <h3>Biomedical Equipment</h3>
-                <p>Delivering Precision & Reliability in Biomedical Equipment Services — We specialize in the installation, calibration, repair, and maintenance of critical healthcare devices. Our expert team ensures your medical equipment performs at its best, helping you provide safer, faster, and more effective patient care.</p>
+        <!-- Core Offerings - THIS SECTION IS NOW CORRECT -->
+        <section class="section section-light">
+            <div class="container">
+                <h2>Our Core Offerings</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Biomedical Equipment</h3>
+                        <p>Delivering Precision & Reliability in Biomedical Equipment Services — We specialize in the installation, calibration, repair, and maintenance of critical healthcare devices. Our expert team ensures your medical equipment performs at its best, helping you provide safer, faster, and more effective patient care.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Electrical & Electronic Solutions</h3>
+                        <p>A Complete Electrical & Electronic Solutions — From powering your spaces to automating your systems, we deliver reliable, future-ready services for homes, businesses, industries, and institutions. Whether you need professional electrical installations or innovative electronic systems, our expert team ensures seamless integration, safety, and lasting performance.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Expert Services & Support</h3>
+                         <p>Your Technology, Our Responsibility — Whether it’s system setup, regular maintenance, or emergency repairs, our expert support team is committed to providing fast, effective, and reliable assistance. We solve problems before they become obstacles, so your business never skips a beat.</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Card 2: Electrical -->
-            <div class="card">
-                <h3>Electrical & Electronic Solutions</h3>
-                <p>A Complete Electrical & Electronic Solutions — From powering your spaces to automating your systems, we deliver reliable, future-ready services for homes, businesses, industries, and institutions. Whether you need professional electrical installations or innovative electronic systems, our expert team ensures seamless integration, safety, and lasting performance.</p>
-            </div>
-
-            <!-- Card 3: Services (Now correctly placed as a sibling) -->
-            <div class="card">
-                <h3>Expert Services & Support</h3>
-                <p>Your Technology, Our Responsibility — Whether it’s system setup, regular maintenance, or emergency repairs, our expert support team is committed to providing fast, effective, and reliable assistance. We solve problems before they become obstacles, so your business never skips a beat.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
         <!-- Call to Action -->
         <section class="section">
             <div class="container">
@@ -243,7 +234,7 @@
                 <p style="max-width: 800px; margin: 0 auto 30px;">
                     Whether you need to purchase new equipment or service your existing machines, our team is here to help.
                 </p>
-                <a href="./contact/" class="btn">Get a Quote</a>
+                <a href="/satyamedi/contact/" class="btn">Get a Quote</a>
             </div>
         </section>
     </main>
@@ -257,10 +248,10 @@
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
-                <p><a href="./index.html">Home</a></p>
-                <p><a href="./products/">Products</a></p>
-                <p><a href="./services/">Services</a></p>
-                <p><a href="./contact/">Contact Us</a></p>
+                <p><a href="/satyamedi/index.html">Home</a></p>
+                <p><a href="/satyamedi/products/">Products</a></p>
+                <p><a href="/satyamedi/services/">Services</a></p>
+                <p><a href="/satyamedi/contact/">Contact Us</a></p>
             </div>
              <div class="footer-col">
                 <h4>Contact Us</h4>

@@ -4,168 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satya MediTech Solution - Home</title>
-    <style>
-        /* Basic CSS for a professional look */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        /* Header & Navigation */
-        header {
-            background-color: #ffffff;
-            padding: 20px 0;
-            border-bottom: 2px solid #0056b3;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            height: 45px;
-            margin-right: 15px;
-        }
-        .logo span {
-            background: linear-gradient(45deg, #007bff, #004080);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav li {
-            margin-left: 25px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav a:hover, nav a.active {
-            color: #007bff;
-        }
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 86, 179, 0.7)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        .btn {
-            background-color: #007bff;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        /* Sections */
-        .section {
-            padding: 60px 0;
-            text-align: center;
-        }
-        .section-light {
-            background-color: #ffffff;
-        }
-        .section h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #0056b3;
-        }
-        /* Cards Layout for Services */
-        .card-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 30px;
-            width: 300px;
-            text-align: left;
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-        }
-        .card h3 {
-            color: #007bff;
-            margin-top: 0;
-        }
-        /* Footer */
-        footer {
-            background-color: #1c2331;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        footer .container {
-             display: flex;
-             justify-content: space-around;
-             flex-wrap: wrap;
-             text-align: left;
-        }
-        footer .footer-col {
-            width: 250px;
-            margin-bottom: 20px;
-        }
-        footer h4 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        footer p, footer a {
-            color: #ccc;
-            text-decoration: none;
-        }
-        footer a:hover {
-            color: white;
-        }
-        .copyright {
-            background-color: #161c27;
-            padding: 15px 0;
-            text-align: center;
-            color: #ccc;
-            font-size: 0.9em;
-        }
-    </style>
+    <!-- Link to the central stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -197,17 +39,17 @@
         </section>
 
         <!-- About Us Brief -->
-        <section class="section">
+        <section class="section section-light">
             <div class="container">
                 <h2>Welcome to Satya MediTech Solution</h2>
-                <p style="max-width: 800px; margin: 0 auto 30px;">
+                <p style="max-width: 800px; margin: -20px auto 30px; font-size: 1.1em;">
                     At Satya MediTech Solution, we bridge the gap between advanced technology and healthcare excellence. We specialize in providing top-tier electrical, electronic, and biomedical equipment, backed by comprehensive service and support to ensure optimal performance and reliability.
                 </p>
             </div>
         </section>
 
         <!-- Core Offerings - THIS SECTION IS NOW CORRECT -->
-        <section class="section section-light">
+        <section class="section">
             <div class="container">
                 <h2>Our Core Offerings</h2>
                 <div class="card-container">
@@ -228,7 +70,7 @@
         </section>
 
         <!-- Call to Action -->
-        <section class="section">
+        <section class="section section-light">
             <div class="container">
                 <h2>Ready to Enhance Your Operations?</h2>
                 <p style="max-width: 800px; margin: 0 auto 30px;">
@@ -257,12 +99,12 @@
                 <h4>Contact Us</h4>
                 <p>Bharatpur, Chitwan , Nepal</p>
                 <p>Email: <a href="mailto:satyameditechs@gmail.com">satyameditechs@gmail.com</a></p>
-                <p>Phone: <a href="tel:+9779851188933">+9779851188933</a></p>
+                <p>Phone: <a href="tel:+9779851188933">+977-9851188933</a></p>
             </div>
         </div>
     </footer>
     <div class="copyright">
-        © 2025 Satya MediTech Solution.| Designed by Syko. All Rights Reserved.
+        © 2024 Satya MediTech Solution.| Designed by Syko. All Rights Reserved.
     </div>
 
 </body>

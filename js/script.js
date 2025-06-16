@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", handleScrollAnimation);
 
 });
-/* === ADD THIS CODE TO THE END of script.js === */
+
 
 // Mobile Navigation Toggle
 const menuToggle = document.getElementById('mobile-menu-toggle');

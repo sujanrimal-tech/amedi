@@ -352,30 +352,7 @@ a:hover {
 .info-card:nth-child(3) { transition-delay: 0.4s; }
 
 
-/* --- Responsive Design --- */
-@media (max-width: 768px) {
-    .section-title { font-size: 2rem; }
-    .hero-content h1 { font-size: 2.5rem; }
-    
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .nav-links {
-        margin-top: 1rem;
-        flex-direction: column;
-        width: 100%;
-    }
-    .nav-links li {
-        margin: 10px 0;
-        text-align: center;
-    }
-    .cta-button {
-        display: none; /* Hide on small screens for cleaner nav */
-    }
-}
 /* --- Styles for Inner Pages (About, Products, etc.) --- */
-
 .page-header {
     background: linear-gradient(rgba(26, 37, 51, 0.7), rgba(26, 37, 51, 0.7)), url('../images/hero-background.jpg') no-repeat center center/cover;
     background-attachment: fixed; /* Parallax effect */
@@ -536,84 +513,6 @@ a:hover {
     border: 0;
 }
 
-/* === REPLACE the old @media (max-width: 768px) block with this one === */
-
-/* --- Responsive Design --- */
-@media (max-width: 768px) {
-    .section-title { font-size: 2rem; }
-    .hero-content h1 { font-size: 2.5rem; }
-    
-    /* Keep navbar horizontal but spaced out */
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem; /* Adjust padding for mobile */
-    }
-
-    /* --- Navigation Links Styling for Mobile --- */
-    .nav-links {
-        position: absolute;
-        top: 100%; /* Position it right below the header */
-        left: 0;
-        width: 100%;
-        background-color: var(--white-color);
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
-        /* Hidden by default */
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
-
-        /* Stack links vertically */
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    /* The class JavaScript will add to show the menu */
-    .nav-links.nav-open {
-        max-height: 500px; /* A large enough height to show all links */
-        padding: 20px 0;
-    }
-    
-    .nav-links li {
-        margin: 15px 0;
-        width: 100%;
-        text-align: center;
-    }
-    
-    /* --- Mobile Menu Toggle (Hamburger) --- */
-    .mobile-menu-toggle {
-        display: block; /* Show the hamburger button */
-        background: none;
-        border: none;
-        font-size: 1.8rem;
-        color: var(--dark-color);
-        cursor: pointer;
-    }
-
-    /* When menu is open, show an 'X' instead of hamburger bars */
-    .mobile-menu-toggle.is-active .fa-bars::before {
-        content: '\f00d'; /* Font Awesome 'times' (X) icon */
-    }
-
-    /* --- Call To Action Buttons --- */
-    .desktop-cta {
-        display: none; /* Hide the desktop "Call Now" button */
-    }
-    .mobile-cta {
-        display: block; /* Show the "Call Now" button inside the mobile menu */
-    }
-}
-
-/* --- Default styles for mobile elements (add this block above the media query) --- */
-.mobile-menu-toggle {
-    display: none; /* Hidden on desktop */
-}
-.mobile-cta {
-    display: none; /* Hidden on desktop */
-}
-
 /* --- Testimonials Section --- */
 .testimonials-section {
     padding: 80px 0;
@@ -687,14 +586,6 @@ a:hover {
     margin-bottom: 20px;
 }
 
-@media (max-width: 992px) {
-    .about-snippet-section .about-grid {
-        grid-template-columns: 1fr;
-    }
-     .about-snippet-section .section-title {
-        text-align: center;
-    }
-}
 /* --- Leadership Message Section on About Page --- */
 .leadership-section {
     background-color: var(--white-color);
@@ -702,7 +593,6 @@ a:hover {
 
 .message-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
     margin-top: 40px;
 }
@@ -750,6 +640,97 @@ a:hover {
     color: var(--text-color);
 }
 
-/* Add staggered delays for the new cards */
-.message-card:nth-child(2) { transition-delay: 0.2s; }
-.message-card:nth-child(3) { transition-delay: 0.4s; }
+
+/* =================================================================== */
+/* =================== RESPONSIVE DESIGN SECTION =================== */
+/* =================================================================== */
+
+/* --- Default styles for mobile elements (Desktop View) --- */
+/* These rules are applied by default, and overridden by media queries below. */
+.mobile-menu-toggle {
+    display: none; /* Hide hamburger on desktop */
+}
+.mobile-cta {
+    display: none; /* Hide mobile CTA on desktop */
+}
+
+/* --- Tablet and Larger Layout Adjustments --- */
+@media (min-width: 768px) {
+    /* Rules for the 2-over-1 leadership layout */
+    .message-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .message-grid .message-card:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+}
+
+/* --- Mobile and Smaller Layout Adjustments --- */
+/* This is the main media query for the mobile hamburger menu */
+@media (max-width: 768px) {
+    .section-title { font-size: 2rem; }
+    .hero-content h1 { font-size: 2.5rem; }
+    
+    /* --- Navbar and Mobile Menu --- */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-links.nav-open {
+        max-height: 500px;
+        padding: 20px 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        color: var(--dark-color);
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle.is-active .fa-bars::before {
+        content: '\f00d';
+    }
+
+    .desktop-cta {
+        display: none;
+    }
+    .mobile-cta {
+        display: block;
+    }
+
+    /* --- General Mobile Layouts --- */
+    .about-grid, .contact-grid, .about-snippet-section .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-snippet-section .section-title {
+        text-align: center;
+    }
+}

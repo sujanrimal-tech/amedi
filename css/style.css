@@ -630,7 +630,8 @@ a:hover {
 
 .message-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* By default (on mobile), display a single column for a simple stack */
+    grid-template-columns: 1fr;
     gap: 40px;
     margin-top: 40px;
 }
@@ -678,6 +679,17 @@ a:hover {
     color: var(--text-color);
 }
 
-/* Add staggered delays for the new cards */
-.message-card:nth-child(2) { transition-delay: 0.2s; }
-.message-card:nth-child(3) { transition-delay: 0.4s; }
+/* --- The Magic: Desktop Layout --- */
+/* When the screen is 768px or wider, apply the special 2-over-1 layout */
+@media (min-width: 768px) {
+    .message-grid {
+        /* Create a two-column grid */
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Target the 3rd message card specifically */
+    .message-grid .message-card:nth-child(3) {
+        /* Tell this card to span from the first grid line to the last one */
+        grid-column: 1 / -1;
+    }
+}

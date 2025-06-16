@@ -50,3 +50,45 @@ if (menuToggle && navLinks) {
         menuToggle.classList.toggle('is-active');
     });
 }
+/* === AJAX Contact Form Submission === */
+const contactForm = document.getElementById('contact-form');
+const formContainer = document.getElementById('form-container');
+const thankYouMessage = document.getElementById('thank-you-message');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        // 1. Prevent the default browser redirection
+        event.preventDefault();
+
+        // 2. Get the form data
+        var formData = new FormData(contactForm);
+        
+        // 3. Send the data to Formspree using fetch
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            // 4. Check if the submission was successful
+            if (response.ok) {
+                // If successful, hide the form and show the thank you message
+                if(formContainer) formContainer.style.display = 'none';
+                if(thankYouMessage) thankYouMessage.style.display = 'block';
+            } else {
+                // If there was a server-side error
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        alert(data["errors"].map(error => error["message"]).join(", "));
+                    } else {
+                        alert('Oops! There was a problem submitting your form.');
+                    }
+                })
+            }
+        }).catch(error => {
+            // 5. Catch network errors
+            alert('Oops! There was a network error.');
+        });
+    });
+}

@@ -1,4 +1,4 @@
-/* --- Google Font Import is in HTML --- */
+
 
 /* --- CSS Variables for Easy Theme Management --- */
 :root {
@@ -641,12 +641,8 @@ a:hover {
 }
 
 
-/* =================================================================== */
-/* =================== RESPONSIVE DESIGN SECTION =================== */
-/* =================================================================== */
 
-/* --- Default styles for mobile elements (Desktop View) --- */
-/* These rules are applied by default, and overridden by media queries below. */
+
 .mobile-menu-toggle {
     display: none; /* Hide hamburger on desktop */
 }

@@ -20,27 +20,40 @@
 <body>
 
     <!-- Header & Navigation -->
-    <header class="main-header">
-        <nav class="navbar">
-            <a href="/" class="logo">
-                <svg class="logo-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <path class="logo-base" d="M5,75 C20,95 80,95 95,75 C90,60 70,55 50,55 C30,55 10,60 5,75 Z M5,75 C2,75 2,70 5,70 L95,70 C98,70 98,75 95,75" fill="none" stroke-width="3"/>
-                    <path class="logo-flame" d="M50,55 C40,40 50,10 50,10 C50,10 60,40 50,55 Z M50,55 C48,45 50,30 50,30 C50,30 52,45 50,55 Z" fill="none" stroke-width="3"/>
-                </svg>
-                <div class="logo-text">
-                    Satya Meditech <span>Solution</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/about/">About Us</a></li>
-                <li><a href="/products/">Products</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
-            <a href="tel:9851188933" class="cta-button">Call Now</a>
-        </nav>
-    </header>
+   <!-- === MODIFIED HEADER SECTION === -->
+<header class="main-header">
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <!-- SVG Logo remains the same -->
+            <svg class="logo-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path class="logo-base" d="M5,75 C20,95 80,95 95,75 C90,60 70,55 50,55 C30,55 10,60 5,75 Z M5,75 C2,75 2,70 5,70 L95,70 C98,70 98,75 95,75" fill="none" stroke-width="3"/>
+                <path class="logo-flame" d="M50,55 C40,40 50,10 50,10 C50,10 60,40 50,55 Z M50,55 C48,45 50,30 50,30 C50,30 52,45 50,55 Z" fill="none" stroke-width="3"/>
+            </svg>
+            <div class="logo-text">
+                Satya Meditech <span>Solution</span>
+            </div>
+        </a>
+
+        <!-- The navigation links now have an ID for JavaScript to target -->
+        <!-- The "Call Now" button has been moved inside -->
+        <ul class="nav-links" id="nav-links-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/products/">Products</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li class="mobile-cta"><a href="tel:9851188933" class="cta-button">Call Now</a></li>
+        </ul>
+        
+        <!-- The original "Call Now" button for desktop -->
+        <a href="tel:9851188933" class="cta-button desktop-cta">Call Now</a>
+
+        <!-- NEW: The hamburger menu button -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
 
     <main>
         <!-- Hero Section -->
@@ -101,7 +114,7 @@
                     <div class="product-card animate-on-scroll">
                         <img src="https://placehold.co/600x400/eeeeee/333333?text=ECG+Machine" alt="ECG Machine">
                         <div class="product-card-content">
-                            <h3> 12-Channel ECG</h3>
+                            <h3>CardioView 12-Channel ECG</h3>
                             <p>Advanced electrocardiogram machine with high-resolution display and real-time analysis.</p>
                             <a href="/products/" class="learn-more-btn">View Details</a>
                         </div>
@@ -109,15 +122,15 @@
                     <div class="product-card animate-on-scroll">
                         <img src="https://placehold.co/600x400/eeeeee/333333?text=Ultrasound" alt="Ultrasound Machine">
                         <div class="product-card-content">
-                            <h3> Pro-X Ultrasound</h3>
-                            <p>High-definition portable color Doppler ultrasound system for exceptional imaging clarity.</p>
+                            <h3>SonoScan Pro-X Ultrasound</h3>
+                            <p>High-definition portable color doppler ultrasound system for exceptional imaging clarity.</p>
                             <a href="/products/" class="learn-more-btn">View Details</a>
                         </div>
                     </div>
                     <div class="product-card animate-on-scroll">
                         <img src="https://placehold.co/600x400/eeeeee/333333?text=Patient+Monitor" alt="Patient Monitor">
                         <div class="product-card-content">
-                            <h3>atient Monitor</h3>
+                            <h3>VitaSign M8 Patient Monitor</h3>
                             <p>A multi-parameter patient monitor for reliable, continuous patient vital signs tracking.</p>
                             <a href="/products/" class="learn-more-btn">View Details</a>
                         </div>
@@ -133,11 +146,11 @@
                 <div class="testimonial-grid">
                     <div class="testimonial-card animate-on-scroll">
                         <p class="quote">The service and support from Satya Meditech have been outstanding. Their equipment is reliable, and their engineers are incredibly responsive and knowledgeable.</p>
-                        <p class="author">Dr. R. Sharma <span>Cardiology, Medical College</span></p>
+                        <p class="author">Dr. R. Sharma <span>Head of Cardiology, Chitwan Medical College</span></p>
                     </div>
                     <div class="testimonial-card animate-on-scroll">
                         <p class="quote">We recently procured a full suite of monitoring systems. The installation was seamless, and the training provided to our staff was thorough. Highly recommended.</p>
-                        <p class="author">Mr. K.P. Adhikari <span>Hospital Administrator, Hospital</span></p>
+                        <p class="author">Mr. K.P. Adhikari <span>Hospital Administrator, Bharatpur Hospital</span></p>
                     </div>
                 </div>
             </div>
@@ -178,7 +191,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Satya Meditech Solution. All Rights Reserved. Designed with <i class="fas fa-heart"></i> By Sujan .</p>
+            <p>© 2024 Satya Meditech Solution. All Rights Reserved. Designed with <i class="fas fa-heart"></i>.</p>
         </div>
     </footer>
 

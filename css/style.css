@@ -623,3 +623,61 @@ a:hover {
         text-align: center;
     }
 }
+/* --- Leadership Message Section on About Page --- */
+.leadership-section {
+    background-color: var(--white-color);
+}
+
+.message-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.message-card {
+    text-align: center;
+    padding: 30px;
+    background: var(--light-color);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.message-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid var(--white-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.message-card h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.message-card span.title {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.message-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+/* Add staggered delays for the new cards */
+.message-card:nth-child(2) { transition-delay: 0.2s; }
+.message-card:nth-child(3) { transition-delay: 0.4s; }

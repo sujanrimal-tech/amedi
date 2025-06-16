@@ -35,3 +35,18 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", handleScrollAnimation);
 
 });
+/* === ADD THIS CODE TO THE END of script.js === */
+
+// Mobile Navigation Toggle
+const menuToggle = document.getElementById('mobile-menu-toggle');
+const navLinks = document.getElementById('nav-links-list');
+
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        // Toggle the 'nav-open' class on the navigation links container
+        navLinks.classList.toggle('nav-open');
+
+        // Toggle the 'is-active' class on the button itself for the X icon
+        menuToggle.classList.toggle('is-active');
+    });
+}

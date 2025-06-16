@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Satya Meditech Solution</title>
+    <!-- Head content (fonts, icons, css) same as about page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header (Copy from main index.html and update active link) -->
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <svg class="logo-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="logo-base" d="M5,75 C20,95 80,95 95,75 C90,60 70,55 50,55 C30,55 10,60 5,75 Z M5,75 C2,75 2,70 5,70 L95,70 C98,70 98,75 95,75" fill="none" stroke-width="3"/>
+                    <path class="logo-flame" d="M50,55 C40,40 50,10 50,10 C50,10 60,40 50,55 Z M50,55 C48,45 50,30 50,30 C50,30 52,45 50,55 Z" fill="none" stroke-width="3"/>
+                </svg>
+                <div class="logo-text">Satya Meditech <span>Solution</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/products/">Products</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/contact/" class="active">Contact</a></li>
+            </ul>
+            <a href="tel:9851188933" class="cta-button">Call Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <header class="page-header">
+            <h1 class="animate-on-scroll">Get In Touch</h1>
+            <p class="animate-on-scroll">We're here to help. Contact us for sales, service, or any inquiry.</p>
+        </header>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-grid animate-on-scroll">
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form action="#"> <!-- Add your form processing URL here -->
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="hero-cta">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> <span><strong>Address:</strong><br>Bharatpur, Chitwan, Nepal</span></p>
+                        <p><i class="fas fa-phone"></i> <span><strong>Phone:</strong><br><a href="tel:9851188933">9851188933</a></span></p>
+                        <p><i class="fas fa-envelope"></i> <span><strong>Email:</strong><br><a href="mailto:satyameditechs@gmail.com">satyameditechs@gmail.com</a></span></p>
+                        
+                        <div class="map-container">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56543.6934563811!2d84.39139580196853!3d27.66336332156822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994e4be935a7679%3A0x7c73402634eb46ec!2sBharatpur%2C%20Nepal!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Copy from main index.html) -->
+    <footer class="main-footer-section">
+        <div class="container footer-grid">
+            <div class="footer-about"><h4>Satya Meditech Solution</h4><p>Your premier source for medical and electronic equipment in Bharatpur, Chitwan. We empower healthcare with technology and trust.</p></div>
+            <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="/">Home</a></li><li><a href="/about/">About Us</a></li><li><a href="/products/">Products</a></li><li><a href="/services/">Services</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+            <div class="footer-contact"><h4>Contact Us</h4><p><i class="fas fa-map-marker-alt"></i> Bharatpur, Chitwan, Nepal</p><p><i class="fas fa-envelope"></i> <a href="mailto:satyameditechs@gmail.com">satyameditechs@gmail.com</a></p><p><i class="fas fa-phone"></i> <a href="tel:9851188933">9851188933</a></p></div>
+        </div>
+        <div class="footer-bottom"><p>© 2024 Satya Meditech Solution. All Rights Reserved. Designed with <i class="fas fa-heart"></i>.</p></div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

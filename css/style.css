@@ -794,7 +794,9 @@ a:hover {
 }
 
 
-.main-footer-section .container {
+@media (min-width: 769px) {
+  .main-footer-section .container {
     padding-left: 0;
     padding-right: 0;
+  }
 }

@@ -278,7 +278,7 @@ a:hover {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
+    gap: 30px;
     padding-bottom: 20px;
 }
 

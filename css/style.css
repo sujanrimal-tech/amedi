@@ -272,20 +272,20 @@ a:hover {
 .main-footer-section {
     background-color: var(--dark-color);
     color: rgba(255, 255, 255, 0.8);
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .footer-grid h4 {
     font-size: 1.2rem;
     color: var(--white-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer-links ul {
@@ -316,7 +316,7 @@ a:hover {
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .footer-bottom .fa-heart {

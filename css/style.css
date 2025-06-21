@@ -272,14 +272,14 @@ a:hover {
 .main-footer-section {
     background-color: var(--dark-color);
     color: rgba(255, 255, 255, 0.8);
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .footer-grid h4 {
@@ -316,7 +316,7 @@ a:hover {
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .footer-bottom .fa-heart {
